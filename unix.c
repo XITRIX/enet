@@ -143,6 +143,10 @@
 #ifndef NO_MSGAPI
 #define NO_MSGAPI 1
 #endif
+#elif defined(__SWITCH__)
+#ifndef HAS_SOCKLEN_T
+#define HAS_SOCKLEN_T 1
+#endif
 #else
 #ifndef HAS_IOCTL
 #define HAS_IOCTL 1
